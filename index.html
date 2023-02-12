@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Ejercicio laboratorio</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+        <div class="middle_div">
+            <h2>Create Account</h2>
+            <br><br>
+            <fieldset>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre" required><br>
+                <span class="error-message" style="display:none" id="span_nombre">Rellene este campo</span>
+                <span class="error-message" style="display:none" id="span_nombre_texto">No se aceptan números en el nombre</span><br>
+                <br>
+                
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" required><br>
+                <span class="error-message" style="display:none" id="span_email">Rellene este campo</span><br><br>
+                
+                <label for="clave">Clave</label><br>
+                <input type="password" id="clave" minlength="8" value="" /><br>
+                <span class="error-message" style="display:none" id="span_clave">Rellene este campo</span>
+                <span class="error-message" style="display:none" id="span_clave_len">Debe tener más de 8 caracteres</span><br><br>
+
+                <label for="clave_confirmar">Confirme su clave</label><br>
+                <input type="password" id="clave_confirmar" minlength="8" value="" /><br>
+                <span class="error-message" style="display:none" id="span_clave_confirmar">Rellene este campo</span>
+                <span class="error-message" style="display:none" id="span_clave_confirmar_coinciden">Las contraseñas no coinciden</span><br><br>
+                
+                <button class= "registerbtn" type="button" onclick="comprobarDatos()">ENVIAR</button>
+            </fieldset>   
+        </div>
+	</body>
+</html>
